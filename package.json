@@ -1,0 +1,22 @@
+{
+  "name": "planta-viva",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Transforma a foto de uma planta de casa em uma representacao 2D editavel e um modelo 3D simples.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.9"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
